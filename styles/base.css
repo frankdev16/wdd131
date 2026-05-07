@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary-color1: rgb(243, 248, 250);
+    --primary-color1: rgb(55, 163, 206);
     --primary-color2: rgb(167, 140, 24);
     --secondary-color1: rgb(19, 60, 59);
     --secondary-color2: rgb(5, 28, 37);
@@ -20,7 +20,7 @@ body {
     display: grid;
     justify-items: center;
     font-size: var(--font-size3);
-    background-color: var(--primary-color1);
+    background-color: var(--text-color1);
     font-family: "Fira Code", monospace;
 }
 
@@ -75,7 +75,7 @@ main h1 {
     grid-template-columns: 3fr 1fr;
 }
 
-.personal, .country, .card nav {
+.personal, .country, .card ul {
     padding: var(--font-size2);
 }
 
@@ -94,14 +94,14 @@ main h1 {
     margin-bottom: 20px;
 }
 
-.card nav a {
+.card ul a {
     font-size: var(--font-size3);
     text-decoration: none;
     line-height: 1.6;
     color: var(--secondary-color2);
 }
 
-.card nav a:hover {
+.card ul a:hover {
     color: var(--primary-color2);
 }
 
