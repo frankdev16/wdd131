@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border1-color: rgb(209, 206, 206);
+    --background1-color: rgb(237, 237, 250);
+    --background2-color: rgb(132, 132, 197);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header, main, footer{
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid var(--border1-color);
+    padding: 1rem;
+    background-color: var(--background2-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--background1-color);
+}
+
+
