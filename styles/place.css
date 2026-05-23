@@ -108,7 +108,7 @@ footer {
 
     .sec2 , .sec1 {
         position: absolute;
-        background-color: rgba(var(--card-bg-rgb), 0.6);
+        background-color: rgba(var(--card-bg-rgb) 0.6);
         padding: 1rem;
         border-radius: 5px;
         width: 300px;
