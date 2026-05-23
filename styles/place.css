@@ -3,7 +3,6 @@
     --secondary-color: #ffffff;
     --text-dark: #1d1c1c;
     --bg-color: #f0f0f0;
-    --card-bg-rgb: 236, 229, 229;
     --heading-font: "Montserrat", sans-serif;
     --body-font: "Roboto", sans-serif;
 }
@@ -108,7 +107,7 @@ footer {
 
     .sec2 , .sec1 {
         position: absolute;
-        background-color: rgba(var(--card-bg-rgb), 0.6);
+        background-color: rgba(236, 229, 229, 0.6);
         padding: 1rem;
         border-radius: 5px;
         width: 300px;
