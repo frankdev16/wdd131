@@ -128,4 +128,8 @@ footer {
         padding: 0.5rem;
         border-radius: 5px;
     }
+
+    main {
+        max-width: 80vw;
+    }
 }
