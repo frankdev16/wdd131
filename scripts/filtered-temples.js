@@ -96,12 +96,10 @@ const temples = [
 
 const container = document.getElementById("temple-container");
 
-// UPGRADE 1: Added templeList parameter
 const generateTempleCards = (templeList) => {
-  // Clear container so old cards don't stack
-  container.innerHTML = "";
 
-  // UPGRADE 2: Changed from temples.map to templeList.map
+    container.innerHTML = "";
+    
   const cardsHTML = templeList.map(temple => {
     return `
       <figure class="temple-card">
