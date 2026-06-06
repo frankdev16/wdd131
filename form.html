@@ -4,20 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sci-Fi Gadget Product Review Form">
+
+    <!-- Fixed: Expanded description to 50-160 characters -->
+    <meta name="description"
+        content="A comprehensive product review form for users to rate, evaluate, and provide feedback on their recently purchased sci-fi gadgets.">
+    <!-- Fixed: Added Meta Author -->
+    <meta name="author" content="Franklin Anyaogu">
+
     <title>Product Review - Sci-Fi Breakdowns</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/form.css">
-    <script src="js/form.js" defer></script>
+    <!-- Fixed: Updated paths to match the course's required folder names -->
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Sci-Fi Gadget Review </h1>
+        <h1>Sci-Fi Gadget Review</h1>
     </header>
 
     <main>
@@ -33,12 +41,21 @@
             <fieldset class="form-group">
                 <legend>Overall Rating <span class="required">*</span></legend>
                 <div class="rating-stars">
-                    <!-- Note how the 'name' is the same for all 5 so they group together -->
-                    <label><input type="radio" id="star1" name="rating" value="1" required> 1 &star;</label>
-                    <label><input type="radio" id="star2" name="rating" value="2"> 2 &star;</label>
-                    <label><input type="radio" id="star3" name="rating" value="3"> 3 &star;</label>
-                    <label><input type="radio" id="star4" name="rating" value="4"> 4 &star;</label>
-                    <label><input type="radio" id="star5" name="rating" value="5"> 5 &star;</label>
+                    <!-- Fixed: Added 'required' to all radios and explicit 'for' attributes to labels -->
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1">1 &star;</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                    <label for="star2">2 &star;</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                    <label for="star3">3 &star;</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                    <label for="star4">4 &star;</label>
+
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">5 &star;</label>
                 </div>
             </fieldset>
 
@@ -48,12 +65,20 @@
             </div>
 
             <fieldset class="form-group">
-                <legend>Which features did you find useful? (Check all that apply)</legend>
+                <legend>Which features did you find useful?</legend>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" id="feature1" name="features" value="durability"> Durability</label>
-                    <label><input type="checkbox" id="feature2" name="features" value="ease-of-use"> Ease of Use</label>
-                    <label><input type="checkbox" id="feature3" name="features" value="performance"> Performance</label>
-                    <label><input type="checkbox" id="feature4" name="features" value="design"> Design</label>
+                    <!-- Fixed: Added explicit 'for' attributes to labels -->
+                    <input type="checkbox" id="feature1" name="features" value="durability">
+                    <label for="feature1">Durability</label>
+
+                    <input type="checkbox" id="feature2" name="features" value="ease-of-use">
+                    <label for="feature2">Ease of Use</label>
+
+                    <input type="checkbox" id="feature3" name="features" value="performance">
+                    <label for="feature3">Performance</label>
+
+                    <input type="checkbox" id="feature4" name="features" value="design">
+                    <label for="feature4">Design</label>
                 </div>
             </fieldset>
 
@@ -70,7 +95,6 @@
             <div class="form-group">
                 <input type="submit" value="Submit Review" class="submit-btn">
             </div>
-
         </form>
     </main>
 
