@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our library of complex science fiction movie breakdowns.">
+    <meta name="author" content="Franklin Anyaogu">
+    <title>Library - Sci-Fi Breakdowns</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sci-Fi Breakdowns</h1>
+        </div>
+        <button id="theme-toggle">☀️ Light Mode</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="library.html" class="active">Movie Library</a>
+            <a href="request.html">Request a Film</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>The Breakdown Library</h2>
+            <p>Select a category to filter our database of mind-bending films.</p>
+            
+            <div class="filter-menu">
+                <button id="btn-all" class="filter-btn">All Films</button>
+                <button id="btn-time" class="filter-btn">Time Travel</button>
+                <button id="btn-space" class="filter-btn">Space</button>
+                <button id="btn-sim" class="filter-btn">Simulations</button>
+                <button id="btn-alien" class="filter-btn">First Contact</button>
+            </div>
+        </section>
+
+        <section id="movie-gallery" class="gallery-grid">
+            <!-- JavaScript will inject the movie cards right here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Sci-Fi Cinematic Breakdowns</p>
+        <p>Franklin Anyaogu | WDD 131</p>
+        <p><a href="references.html">Site References & Citations</a></p>
+    </footer>
+</body>
+
+</html>
