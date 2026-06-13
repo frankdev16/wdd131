@@ -88,7 +88,7 @@ if (btnAll) {
 }
 
 // ==========================================
-// FORM SUBMISSION & LOCAL STORAGE (Criterion 8 & 15)
+// FORM SUBMISSION & LOCAL STORAGE 
 // ==========================================
 const requestForm = document.getElementById("request-form");
 const savedMovieSpan = document.getElementById("saved-movie");
